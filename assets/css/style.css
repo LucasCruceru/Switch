@@ -12,3 +12,17 @@
     }
 }
 
+.background-jumbo {
+    background-image: url(../img/background.jpg);
+}
+
+.button-cust {
+    background-color: greenyellow;
+    border-radius: -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+.center-white-text{
+    text-align: center; 
+    color: white;
+}
