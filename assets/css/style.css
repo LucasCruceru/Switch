@@ -1,0 +1,14 @@
+.lorem{
+    background-color: rgba(12, 84, 96, 0.69);
+    color: #000;
+}
+@media all and (max-width: 500px) {
+   body{background-color: #2e3133}
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    .lorem{
+        background-color: #9fcdff;
+    }
+}
+
