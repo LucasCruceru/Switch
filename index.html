@@ -10,46 +10,47 @@
 
     <link rel="stylesheet" href="assets/css/style.css?v=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <script>
+        $( document ).ready(function() {
+            console.log( "document loaded" );
+        });
+
+        $( window ).on( "load", function() {
+            console.log( "window loaded" );
+        });
+    </script>
 
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-    <div class="row">
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <a class="navbar-brand" href="#">Switch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div id="imaginary_container" style="margin-left:3%; width: 70%">
-            <div class="input-group stylish-input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon">
-                <a><span class="fa fa-search"></span></a>
-            </span>
-            </div>
-        </div>
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">What we do?</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Testimonial</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Contact Us</a>
             </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
@@ -57,34 +58,36 @@
 <div class="background-jumbo">
     <h5 class="center-white-text" style="padding-top: 30%; padding-bottom: 10%">Art is eternal
         happiness</h5>
-    <a #xml onclick="load()" class="badge-pill center-white-text pill-button" href="#" role="button">Work with us</a>
+    <div class="d-flex justify-content-center">
+        <a #xml onclick="load()" class="badge-pill center-white-text pill-button" style="margin-bottom: 5%" href="#" role="button">Work with us</a>
+    </div>
 </div>
-<div class="row" style="margin: 0">
-    <div class="col-12">
-        <div class="custom-badge badge-icon"><i  class="fa fa-camera-retro" aria-hidden="true"></i></div>
-        <h5 style="margin-top: 5%; margin-left: 35%;">Lorem ipsum</h5>
+<div class="row container-fluid" style="margin: 0; width: 100%">
+    <div class="col" style=" margin: auto; margin-bottom: 2%;">
+        <div class="custom-badge badge-icon mx-auto"><i  class="fa fa-camera-retro" aria-hidden="true"></i></div>
+        <h5 style="margin-top: 5%; text-align: center">Lorem ipsum</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Morbi congue nulla et libero eleifend, vitae maximus sapien facilisis.
             Integer lacinia tempor turpis eu placeratum. </p>
-        <a class="badge-pill center-white-text pill-button">Learn more</a>
+        <div class="d-flex justify-content-center"><a class="badge-pill center-white-text pill-button">Learn more</a></div>
     </div>
 
-    <div class="col-12">
-        <div class="custom-badge badge-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
-        <h5 style="margin-top: 5%; margin-left: 35%;">Lorem ipsum</h5>
+    <div class="col" style=" margin: auto; margin-bottom: 2%">
+        <div class="custom-badge badge-icon mx-auto"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
+        <h5 style="margin-top: 5%; text-align: center">Lorem ipsum</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Morbi congue nulla et libero eleifend, vitae maximus sapien facilisis.
             Integer lacinia tempor turpis eu placeratum. </p>
-        <a class="badge-pill center-white-text pill-button">Learn more</a>
+        <div class="d-flex justify-content-center"><a class="badge-pill center-white-text pill-button">Learn more</a></div>
     </div>
 
-    <div class="col-12">
-        <div class="custom-badge badge-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-        <h5 style="margin-top: 5%; margin-left: 35%;">Lorem ipsum</h5>
+    <div class="col" style=" margin: auto; margin-bottom: 2%">
+        <div class="custom-badge badge-icon mx-auto"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+        <h5 style="margin-top: 5%; text-align: center">Lorem ipsum</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Morbi congue nulla et libero eleifend, vitae maximus sapien facilisis.
             Integer lacinia tempor turpis eu placeratum. </p>
-        <a class="badge-pill center-white-text pill-button">Learn more</a>
+        <div class="d-flex justify-content-center"><a class="badge-pill center-white-text pill-button">Learn more</a></div>
     </div>
 </div>
 <script src="assets/tether/src/js/utils.js"></script>

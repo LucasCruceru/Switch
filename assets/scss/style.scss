@@ -1,0 +1,58 @@
+$box-size: 150px;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+.lorem{
+    background-color: rgba(12, 84, 96, 0.69);
+    color: #000;
+}
+@media all and (max-width: 500px) {
+    body{background-color: #2e3133}
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    .lorem{
+        background-color: #9fcdff;
+    }
+}
+
+.background-jumbo {
+    background-image: url(../img/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.button-cust {
+    border-radius: 20%;
+    background-color: greenyellow;
+}
+.center-white-text{
+    text-align: center;
+    color: white;
+}
+
+.pill-button{
+    margin-bottom: 10%;
+    background-color: #54D054;
+    padding-bottom: 2px;
+
+}
+.custom-badge{
+    margin-top: 10%;
+    width: $box-size;
+    height: $box-size;
+    background-color: #E2F3E1;
+    border-radius: 20%;
+}
+
+.badge-icon{
+    color: #54D054;
+    font-size: 600%;
+    text-align: center;
+    vertical-align: 0;
+}
