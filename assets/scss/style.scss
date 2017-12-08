@@ -1,4 +1,6 @@
 $box-size: 150px;
+$green : #54D054;
+$ten-percent: 10%;
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -37,13 +39,13 @@ $box-size: 150px;
 }
 
 .pill-button{
-    margin-bottom: 10%;
-    background-color: #54D054;
+    margin-bottom: $ten-percent;
+    background-color: $green;
     padding-bottom: 2px;
 
 }
 .custom-badge{
-    margin-top: 10%;
+    margin-top: $ten-percent;
     width: $box-size;
     height: $box-size;
     background-color: #E2F3E1;
@@ -51,7 +53,7 @@ $box-size: 150px;
 }
 
 .badge-icon{
-    color: #54D054;
+    color: $green;
     font-size: 600%;
     text-align: center;
     vertical-align: 0;
@@ -69,3 +71,5 @@ $box-size: 150px;
 .navbar-toggle {
     z-index:1;
 }
+
+// sass --watch assets/scss/style.scss:assets/css/style.css
