@@ -1,7 +1,0 @@
-<b>Titlu</b>
-<ul>
-<li>Paragraf 1</li>
-<li>Paragraf 2</li>
-<li>Paragraf 3</li>
-<li>Paragraf 4</li>
-</ul>
